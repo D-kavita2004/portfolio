@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-image: linear-gradient(180deg, #9060a8,#fdf5f3);
+}
+section{
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  background-position: fixed;
+}
+@media (max-width:1200px){
+  section{
+    height: auto;
+  }
+}
