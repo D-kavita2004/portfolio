@@ -13,23 +13,25 @@ const Header = () => {
 
     return (
         <header>
-            <nav>
-                <h2>D KAVITA</h2>
+            <nav className='nav-bar'>
+                <h2>PORTFOLIO</h2>
                 <ul>
-                    <li><a className='nav-links' href="#intro">Intro</a></li>
-                    <li><a className='nav-links' href="#skill-container">Skills</a></li>
-                    <li><a className='nav-links' href="https://github.com/D-kavita2004?tab=repositories" target='_blank'>GitHub</a></li>
-                    <li><a className='nav-links' href="https://www.linkedin.com/in/d-kavita-119691257" target='_blank'>LinkedIn</a></li>
+                    <Link className='nav-links' to ="/Intro"><li>Intro</li></Link>
+                    <Link className='nav-links' to ="/Skills"><li>Skills</li></Link>
+                    <Link className='nav-links' to ="/Projects"><li>Projects</li></Link>
+                    <Link className='nav-links' to="https://github.com/D-kavita2004?tab=repositories" target='_blank'><li>GitHub</li></Link>
+                    <Link className='nav-links' to ="https://www.linkedin.com/in/d-kavita-119691257" target='_blank'><li>LinkedIn</li></Link>
                 </ul>
                 <FontAwesomeIcon className='hover-effect' id='Hide' onClick={showSideBar} icon={faBars} style={{ color: "#1d1d1f",LinkfontSize: "4vmax", marginLeft: "-80px" }} />
             </nav>
             <nav className="sideBar">
                 <FontAwesomeIcon id= "xmark" className='hover-effect' onClick={closeSideBar} icon={faXmark} style={{ color: "#595b5f", fontSize: "25px" }} />
                 <ul className="sideList">
-                    <li><a className='nav-links' href=".intro">Intro</a></li>
-                    <li><a className='nav-links' href="#skill-container">Skills</a></li>
-                    <li><a className='nav-links' href="https://github.com/D-kavita2004?tab=repositories" target='_blank'>GitHub</a></li>
-                    <li><a className='nav-links' href="https://www.linkedin.com/in/d-kavita-119691257" target='_blank'>LinkedIn</a></li>
+                    <Link className='nav-links' to ="/Intro"><li>Intro</li></Link>
+                    <Link className='nav-links' to ="/Skills"><li>Skills</li></Link>
+                    <Link className='nav-links' to ="/Projects"><li>Projects</li></Link>
+                    <Link className='nav-links' to="https://github.com/D-kavita2004?tab=repositories" target='_blank'><li>GitHub</li></Link>
+                    <Link className='nav-links' to ="https://www.linkedin.com/in/d-kavita-119691257" target='_blank'><li>LinkedIn</li></Link>
                 </ul>
             </nav>
         </header>

@@ -1,5 +1,4 @@
 #skill-container{
-   /* background-color: aqua; */
    height: 100%;
    width: 100%;
    display: flex;
@@ -10,16 +9,14 @@
 #skill-container > h2{
    height: 10%;
    width: 100%;
-   /* background-color: blue; */
    text-align: center;
-   margin-top: 70px;
+   margin-top: 50px;
    font-size: 10vmin;
    font-style: italic;
 }
 #skill-container > #my-skills{
    height: 90%;
-   width: 80%;
-   /* background-color: brown; */
+   width: 90%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -27,10 +24,10 @@
    margin-bottom: 40px;
 }
 .skill{
-   height: 220px;
-   width: 220px;
+   height: 34vmin;
+   width: 32vmin;
    background-color: bisque;
-   margin: 30px;
+   margin: 25px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -38,19 +35,26 @@
    font-size: 3vmin;
    border-radius: 30px;
    box-shadow: 0 0 6px 6px rgb(70, 67, 67);
+   overflow:hidden;
 }
 .skill:hover{
-   height: 230px;
-   width: 230px;
+   height: 36vmin;
+   width: 34vmin;
    transition: 0.5s;
    background-color: rgb(208, 241, 185);
    box-shadow: 0 0 8px 6px ;
-}
+} 
 .skill > * {
    margin: 7px;
 }
 @media (max-width:650px){
    .skill{
       font-size: 4.5vmin;
+      height: 51vmin;
+      width: 51vmin;
    }
+   .skill:hover{
+      height: 53vmin;
+      width: 53vmin;
+   } 
 }

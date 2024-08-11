@@ -1,3 +1,14 @@
+.Home{
+   scroll-snap-type: y mandatory;
+ }
+ .bkg-scroll{
+   font-size: 15vmin;
+   /* opacity: 0.3; */
+   white-space: nowrap;
+   margin-top: -140px;
+   font-style: italic;
+   color: grey;
+ }
 #intro{
    height: calc(100vh - 9vmin);
    width: 100%;
@@ -21,6 +32,7 @@
    align-items: center;
    flex-direction: column;
    font-size: 5vmin;
+   color: rgba(245, 245, 220, 0.959);
 }
 #my-image{
    height: 85%;
@@ -33,9 +45,13 @@
    height: 100%;
    width: 100%;
 }
-@media (max-width:600px){
+@media (max-width:700px){
    #intro{
       flex-direction: column;
+   }
+   .bkg-scroll{
+      font-size: 21vmin;
+      margin-top: -170px;
    }
    #introduction, #img-container{
       width: 100%;
